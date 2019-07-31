@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* DO NOT GO UP FROM HERE */
+
+
+body {
+    width: 100vw;
+    min-height: 100%;
+    /* display: flex; */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navBar {
+    width: 100vw;
+    height: 10vh;
+    background: #0B0B0B; 
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 10;
+}
+
+.listOne {
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.listOne > h1 {
+    color: #E2E2E2;
+    font-size: 26px;
+    margin-left: 120px;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.listOne > li {
+    margin: 20px;
+    font-size: 15px;
+}
+
+
+.listTwo {
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.listTwo > li {
+    margin: 12px;
+    font-size: 13px;
+    color: #899199;
+}
+
+.footer {
+    width: 100vw;
+    height: 6.5vh;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+
+    /* color: #E2E2E2; */
+
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.listOneOne {
+    color: #E2E2E2;
+
+    display: flex;
+    align-items: center;
+}
+
+.listOneOne > h1 {
+    color: #E2E2E2;
+    font-size: 14px;
+    /* margin-left: 12px; */
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.listOneOne > li {
+    margin: 10px;
+    font-size: 11px;
+}
+
+.footer > h1 {
+    color: #899199;
+    font-size: 9px;
+    
+    display: flex;
+    align-items: center;
+}
+
+
+.centerPage {
+    width: 100vw;
+    height: 90vh;
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.image {
+    /* display: flex; */
+    height: 100%;
+    width: 100%;
+}
+
+.centerNav {
+    width: 100vw;
+    height: 20vh;
+    background: #21272B;
+    opacity: .75;
+    bottom: 10vh;
+    font-family: 'Fjalla One', sans-serif;
+
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.centerNav > h1 {
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.centerNav > button {
+    background-color: #FFFFFF;
+    height: 4.5vh;
+    width: 13vw;
+    font-size: 13px;
+    font-weight: 700;
+    color: black;
+    border-radius: 3px;;
+}
+
+.centerNav > button:active {
+    background-color: #CCAC55;
+    border: none;
+}
+
+.pointless {
+    height: 20vh;
+    width: 100vw;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 900px;
+    font-size: 20px;
+    color: #3A3A3A;
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.infoBoxes {
+    /* width: 100vw; */
+    height: 60vh;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+
+.infoBoxes > div {
+    height: 40vh;
+    width: 25vw;
+
+    position: relative;
+
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* align-self: flex-start */
+
+    -webkit-box-shadow: 0px 0px 16px -11px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 0px 16px -11px rgba(0,0,0,0.75);
+   box-shadow: 0px 0px 16px -11px rgba(0,0,0,0.75);
+}
+
+.smallImage > img {
+    margin: 15px 33px;
+    
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column */
+}
+
+.smallImage > p {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+
